@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 
 // Public Routes
 Route::get('/', [AuthController::class, 'login']);
+Route::post('/', [AuthController::class, 'auth_login']);
 Route::get('forgot', [AuthController::class, 'forgot']);
 Route::post('login_post', [AuthController::class, 'login_post']);
 Route::get('admin/dashboard', [DashboardController::class, 'dashboard']);
