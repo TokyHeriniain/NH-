@@ -12,7 +12,7 @@
                 <p class="text-center small">Enter your email & password to login</p>
             </div>
 
-            <form method="post" action="{{ url('login_post') }}" class="row g-3 needs-validation" novalidate>
+            <form method="post" action="{{ url('auth_login') }}" class="row g-3 needs-validation" novalidate>
                 {{ csrf_field() }}  <!-- Fixed typo here -->
                 
                 <div class="col-12">
